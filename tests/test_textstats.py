@@ -20,3 +20,11 @@ def test_word_count_tabs_and_newlines():
 def test_word_count_empty_and_whitespace_only():
     assert word_count("") == 0
     assert word_count("   \t\n") == 0
+
+
+def test_average_word_length_empty():
+    assert average_word_length("") == 0.0
+
+
+def test_average_word_length_whitespace_only():
+    assert average_word_length("   \t\n") == 0.0
