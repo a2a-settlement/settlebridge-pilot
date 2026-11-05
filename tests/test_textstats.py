@@ -7,3 +7,16 @@ def test_word_count_simple():
 
 def test_average_word_length_simple():
     assert average_word_length("ab abcd") == 3.0
+
+
+def test_word_count_repeated_spaces():
+    assert word_count("hello  world") == 2
+
+
+def test_word_count_tabs_and_newlines():
+    assert word_count("hello\tworld\nagain\n") == 3
+
+
+def test_word_count_empty_and_whitespace_only():
+    assert word_count("") == 0
+    assert word_count("   \t\n") == 0
