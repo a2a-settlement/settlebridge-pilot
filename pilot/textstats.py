@@ -1,6 +1,6 @@
 def word_count(text: str) -> int:
     """Return the number of whitespace-separated words in text."""
-    return len(text.split(" "))
+    return len(text.split())
 
 
 def average_word_length(text: str) -> float:
